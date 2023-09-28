@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+    font-family: 'Roboto';
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 25px;
+    height: 440px;
+    width: 630px;
+    border-radius: 20px;
+    color: hsl(234, 29%, 20%);
+}
+
+.main-container2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 40px;
+    height: 340px;
+    width: 350px;
+    border-radius: 20px;
+    color: hsl(234, 29%, 20%);
+}
+
+.main-container2 img {
+    margin-bottom: 30px;
+}
+
+.container1 {
+    padding: 20px;
+    width: 300px;
+    height: 393px;
+}
+
+.container2 {
+    background-image: url('newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg'); /* Replace with your image path */
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 460px;
+    border-radius: 20px;
+    padding-left: 320px;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 45px;
+}
+
+p {
+    font-size: 13px;
+    opacity: 0.9;
+    padding: 0;
+}
+
+span {
+}
+
+.container li {
+    list-style-type: lower-alpha;
+}
+
+.custom-list {
+    list-style-type: none; /* Remove default list disc */
+    padding-left: 0; /* Remove any default padding */
+}
+
+.custom-list li {
+    font-size: 12px;
+    padding: 5px;
+    opacity: 0.9;
+}
+
+.custom-list li::before {
+    content: ""; /* Ensure no default content is displayed */
+    display: inline-block; /* Display the SVG as an inline block */
+    width: 21px; /* Set the width of the SVG */
+    height: 21px; /* Set the height of the SVG */
+    vertical-align: middle; /* Align the SVG vertically with text */
+    margin-right: 10px; /* Add spacing between SVG and text if needed */
+    background: url('newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg') no-repeat; /* Replace 'your-svg-image.svg' with the path to your SVG */
+}
+
+form {
+    padding-top: 2px;
+}
+
+form label {
+    font-size: 13px;
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+
+form input {
+    margin: 10px 0 20px 0;
+    width: 265px;
+    height: 40px;
+    padding-left: 20px;
+    color: grey;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    width: 255px;
+    padding: 15px;
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    font-weight: 700;
+}
+
+#submitBtn2 {
+    margin-top: 25px;
+    width: 270px;
+}
+
+button:hover {
+    background: hsl(235, 18%, 26%);
+}
+
+button:active {
+    background: linear-gradient(90deg, rgba(255, 3, 45, 0.89), rgba(255, 166, 0, 0.76));
+    box-shadow: 0px 5px 15px 5px rgba(158, 25, 25, 0.5);
+}
+
+.error {
+    background-color: rgba(255, 0, 0, 0.219);
+    border: 1px solid rgba(255, 0, 0, 0.37);
+    color: rgba(255, 0, 0, 0.37);
+}
+
+.error-message {
+    
+}
+
+#case {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 610px) {
+    .main-container {
+        flex-direction: column-reverse;
+        height: 650px;
+        width: 300px;
+        border-radius: 0px;
+        overflow: hidden;
+    }
+    .main-container2 {
+        justify-content: space-between;
+        height: 600px;
+        width: 300px;
+        border-radius: 0px;
+    }
+    .container2 {
+        background-image: url('newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-mobile.svg');
+        width: 40px;
+        height: 450px;
+        position: relative;
+        top: -35px;
+    }
+    .cont1 {
+        margin-top: 50px;
+    }
+    #submitBtn {
+        width: 270px;
+    }
+}
